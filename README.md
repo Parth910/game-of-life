@@ -37,3 +37,42 @@ To Test the game:
 1. Clone the repository
 2. Navigate to root dir(game-of-life/)
 3. Run `node test.js` to test the game
+
+
+## Examples
+
+Here are some common patterns in Conway's Game of Life:
+
+### Still Life Patterns
+1. Block (2x2 square)
+
+Input
+```
+1,1
+1,2
+2,1
+2,2
+```
+Output
+```
+1,1
+1,2
+2,1
+2,2
+```
+
+### Oscillators
+1. Blinker (Period 2)
+
+Input
+```
+1,1
+1,0
+1,2
+```
+Output
+```
+1,1
+0,1
+2,1
+```
