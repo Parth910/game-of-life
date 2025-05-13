@@ -1,0 +1,39 @@
+# Game of Life
+
+A JavaScript implementation of Conway's Game of Life.
+
+## Rules
+
+The Game of Life follows these rules:
+
+1. Any live cell with fewer than two live neighbors dies (underpopulation)
+2. Any live cell with two or three live neighbors lives on to the next generation
+3. Any live cell with more than three live neighbors dies (overpopulation) 
+4. Any dead cell with exactly three live neighbors becomes a live cell (reproduction)
+
+## Implementation
+
+This implementation includes:
+
+- Cell class for managing individual cell state and position
+- Grid class for managing the game board
+- GameRulesService for applying the rules of the game
+- GameOfLife class orchestrating game progression
+- Test suite validating core functionality
+
+## Usage
+
+Prerequisites:
+- Node.js installed on your machine
+
+To run the game:
+
+1. Clone the repository
+2. Navigate to root dir(/GAME-OF-LIFE)
+3. Run `node app.js` to start the game
+
+To Test the game:
+
+1. Clone the repository
+2. Navigate to root dir(/GAME-OF-LIFE)
+3. Run `node test.js` to test the game
