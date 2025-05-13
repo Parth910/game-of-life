@@ -1,5 +1,6 @@
 import GameRulesService from '../services/GameRulesService.js';
 
+// Custom error class for game errors
 class GameError extends Error {
   constructor(message) {
     super(message);
@@ -7,6 +8,7 @@ class GameError extends Error {
   }
 }
 
+// GameOfLife class
 class GameOfLife {
   constructor(grid, gameRulesService = new GameRulesService()) {
     if (!grid) {
@@ -16,6 +18,7 @@ class GameOfLife {
     this.gameRulesService = gameRulesService;
   }
 
+  // Get alive neighbors
   getAliveNeighbors(cell, aliveCells) {
     if (!cell || typeof cell.getNeighbors !== 'function') {
       throw new GameError('Invalid cell object');
@@ -29,6 +32,7 @@ class GameOfLife {
     });
   }
 
+  // Tick the game/process the next generation
   tick() {
     try {
       const aliveCells = this.grid.getAliveCells();
@@ -65,6 +69,7 @@ class GameOfLife {
     }
   }
 
+  // Get the current generation
   getCurrentGeneration() {
     try {
       if (!this.grid || !this.grid.aliveCells) {

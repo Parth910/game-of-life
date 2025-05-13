@@ -29,11 +29,11 @@ Prerequisites:
 To run the game:
 
 1. Clone the repository
-2. Navigate to root dir(/GAME-OF-LIFE)
+2. Navigate to root dir(game-of-life/)
 3. Run `node app.js` to start the game
 
 To Test the game:
 
 1. Clone the repository
-2. Navigate to root dir(/GAME-OF-LIFE)
+2. Navigate to root dir(game-of-life/)
 3. Run `node test.js` to test the game

@@ -1,3 +1,4 @@
+// GameRulesService class
 class GameRulesService {
   shouldSurvive(aliveNeighbors) {
     // A live cell survives if it has 2 or 3 live neighbors

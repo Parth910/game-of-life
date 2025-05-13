@@ -1,7 +1,6 @@
 import Cell from './src/models/Cell.js';
 import Grid from './src/models/Grid.js';
 import GameRulesService from './src/services/GameRulesService.js';
-import GameOfLife from './src/models/GameOfLife.js';
 import main from './src/index.js';
 
 // Simple test runner

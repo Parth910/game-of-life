@@ -1,16 +1,20 @@
+// Grid class
 class Grid {
   constructor(aliveCells) {
     this.aliveCells = aliveCells;
   }
 
+  // Get all alive cells
   getAliveCells() {
     return this.aliveCells;
   }
 
+  // Check if a cell is in a list of cells
   containsCell(cells, targetCell) {
     return cells.some(cell => cell.isEqual(targetCell));
   }
 
+  // Get all dead cells
   getDeadCells() {
     const aliveCells = this.aliveCells;
     const deadCells = [];
@@ -26,14 +30,6 @@ class Grid {
     }
     
     return deadCells;
-  }
-
-  addCell(cell) {
-    this.aliveCells.push(cell);
-  }
-
-  removeCell(cell) {
-    this.aliveCells = this.aliveCells.filter(c => !c.isEqual(cell));
   }
 }
 
